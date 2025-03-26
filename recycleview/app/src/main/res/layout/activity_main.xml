@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+    <TextView
+        android:id="@+id/tvInfoStudent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Manage Student"
+        android:textColor="#E91E63"
+        android:textSize="26sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.022" />
+<!--   android:textStyle="bold"         In đậm chữ.
+Vì bạn đang dùng ConstraintLayout, nên những dòng này dùng để căn lề - định vị cho TextView.
+app:layout_constraintBottom_toBottomOf="parent"     	Gắn cạnh dưới của TextView vào cạnh dưới của cha (ConstraintLayout).
+app:layout_constraintTop_toTopOf="parent"           	Gắn cạnh trên vào cạnh trên của cha.
+app:layout_constraintStart_toStartOf="parent"       	Gắn cạnh bắt đầu (trái) vào cạnh trái của cha.
+app:layout_constraintEnd_toEndOf="parent"           	Gắn cạnh kết thúc (phải) vào cạnh phải của cha.
+app:layout_constraintVertical_bias="0.022"          	Dịch text lên phía trên gần đỉnh. Bias từ 0 → 1 (0 là sát trên, 1 là sát dưới).
+-->
+    <Button
+        android:id="@+id/btnAdd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:text="Add"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.051"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvInfoStudent" />
+    <EditText
+        android:id="@+id/edtName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="28dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:minHeight="48dp"
+        android:hint="Input Name"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.452"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnAdd" />
+    <ListView
+        android:id="@+id/lstName"
+        android:layout_width="match_parent"
+        android:layout_height="500dp"
+        android:layout_marginTop="36dp"
+        android:listSelector="#00ff00"
+        app:layout_constraintTop_toBottomOf="@+id/edtName"
+        tools:layout_editor_absoluteX="0dp" />
+</androidx.constraintlayout.widget.ConstraintLayout>

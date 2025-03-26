@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:background="#E0F7FA">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Welcome to Login!"
+        android:textSize="20sp"
+        android:textColor="#000000"
+        android:padding="20dp"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    <!--Text View for Displaying SIGN IN Text At Top of UI-->
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="SIGN IN"
+                            android:id="@+id/textView3"
+                            android:layout_alignParentTop="true"
+                            android:layout_centerHorizontal="true" />
+                        <!--Text View for Displaying Username-->
+                        <TextView
+                            android:id="@+id/userName"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="20dp"
+                            android:layout_marginTop="110dp"
+                            android:text="UserName:"
+                            android:textColor="#000000"
+                            android:textSize="20sp" />
+                        <!--Text View for Displaying Password-->
+                        <TextView
+                            android:id="@+id/password"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/userName"
+                            android:layout_margin="20dp"
+                            android:text="Password:"
+                            android:textColor="#000000"
+                            android:textSize="20sp" />
+                            <!--Edit Text for Filling Username-->
+                            <EditText
+                                android:id="@+id/edt_userName"
+                                android:layout_width="fill_parent"
+                                android:layout_height="48dp"
+                                android:layout_marginLeft="20dp"
+                                android:layout_marginTop="100dp"
+                                android:layout_toRightOf="@+id/userName"
+                                android:hint="User Name" />
+                            <!--Edit Text for Filling Password-->
+                            <EditText
+                                android:layout_width="fill_parent"
+                                android:layout_height="48dp"
+                                android:layout_below="@+id/edt_userName"
+                                android:layout_centerVertical="true"
+                                android:layout_toRightOf="@+id/password"
+                                android:hint="Password" />
+                            <!--Button for Clicking after filling details-->
+                            <Button
+                                android:id="@+id/btnLogin"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@+id/password"
+                                android:layout_centerHorizontal="true"
+                                android:layout_marginTop="20dp"
+                                android:backgroundTint="#03B424"
+                                android:text="Login"
+                                android:textColor="#0D47A1"
+                                android:textStyle="bold" />
+        <Button
+            android:id="@+id/backButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Go màn hinh 3"/>
+    </RelativeLayout>
+
+</LinearLayout>
+<!--
+🔹 <LinearLayout>                             là bố cục chính, chứa tất cả các thành phần bên trong.
+🔹 xmlns:android="..."                        là khai báo không gian tên (Namespace), cần thiết để sử dụng các thuộc tính android.
+🔹 android:layout_width="match_parent"       → Chiều rộng: chiếm toàn bộ màn hình.
+🔹 android:layout_height="match_parent"       → Chiều cao: chiếm toàn bộ màn hình.
+🔹 android:gravity="center"                   → Căn giữa nội dung bên trong theo cả chiều ngang và dọc.
+🔹 android:orientation="vertical"            → Sắp xếp các phần tử theo chiều dọc.
+🔹 android:background="#E0F7FA"                 → Đặt màu nền xanh nhạt (#E0F7FA).
+
+<RelativeLayout>                                 → Đây là bố cục chính, cho phép các phần tử định vị tương đối với nhau.
+Hiển thị chữ "UserName:".
+🔹 android:layout_marginLeft="20dp" → Cách lề trái 20dp.
+🔹 android:layout_marginTop="110dp" → Cách đỉnh màn hình 110dp.
+🔹 android:textSize="20sp" → Cỡ chữ 20sp.
+Hiển thị chữ "Password:".
+🔹 android:layout_below="@+id/userName" → Đặt phía dưới nhãn "UserName".
+🔹 android:layout_margin="20dp" → Khoảng cách 20dp từ các phía.
+Trường nhập Username.
+🔹 android:layout_width="fill_parent" → Chiều rộng full màn hình.
+🔹 android:layout_toRightOf="@+id/userName" → Nằm bên phải nhãn "UserName:".
+🔹 android:hint="User Name" → Hiển thị gợi ý "User Name" khi chưa nhập.
+Trường nhập Password.
+🔹 android:layout_below="@+id/edt_userName" → Nằm dưới ô nhập Username.
+🔹 android:layout_toRightOf="@+id/password" → Nằm bên phải nhãn "Password:".
+🔹 android:hint="Password" → Hiển thị gợi ý "Password" khi chưa nhập.
+Nút "Login" dùng để thực hiện đăng nhập.
+🔹 android:layout_below="@+id/password" → Nằm dưới ô nhập Password.
+🔹 android:layout_centerHorizontal="true" → Căn giữa theo chiều ngang.
+🔹 android:backgroundTint="#03B424" → Màu nền xanh lá (#03B424).
+🔹 android:textColor="#0D47A1" → Chữ màu xanh dương đậm (#0D47A1).
+🔹 android:textStyle="bold" → Chữ in đậm.
+
+
+
+Trong XML của Android, có nhiều loại bố cục (layout) khác nhau, nhưng phổ biến nhất là:
+
+LinearLayout            Sắp xếp các phần tử con theo hàng ngang (horizontal) hoặc hàng dọc (vertical).
+RelativeLayout          Sắp xếp các phần tử con dựa vào vị trí tương đối với các phần tử khác.
+ConstraintLayout        	Tương tự như RelativeLayout nhưng mạnh hơn, có thể đặt ràng buộc theo nhiều cách.
+FrameLayout             Chỉ chứa một phần tử duy nhất hoặc các phần tử xếp chồng lên nhau.
+TableLayout             Chia màn hình thành dạng bảng (giống HTML table).
+GridLayout              Chia bố cục thành dạng lưới (hàng/cột), mạnh hơn TableLayout.
+
+
+
+
+
+-->

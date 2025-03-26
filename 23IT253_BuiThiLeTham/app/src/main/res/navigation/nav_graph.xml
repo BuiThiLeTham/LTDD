@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    app:startDestination="@id/primeFragment">
+
+    <fragment
+        android:id="@+id/primeFragment"
+        android:name="com.example.a23it253_buithiletham.PrimeFragment"
+        android:label="Số Nguyên Tố"
+        tools:layout="@layout/fragment_prime" />
+
+    <fragment
+        android:id="@+id/sumFragment"
+        android:name="com.example.a23it253_buithiletham.SumFragment"
+        android:label="Tính Tổng"
+        tools:layout="@layout/fragment_sum" />
+
+<!--    <fragment-->
+<!--        android:id="@+id/hocPhanFragment"-->
+<!--        android:name="com.example.a23it253_buithiletham.HocPhanFragment"-->
+<!--        android:label="Học Phần"-->
+<!--        tools:layout="@layout/item_hoc_phan" />-->
+</navigation>

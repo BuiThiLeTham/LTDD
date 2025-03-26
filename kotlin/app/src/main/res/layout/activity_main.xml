@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <androidx.drawerlayout.widget.DrawerLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="16dp">
+
+            <androidx.appcompat.widget.Toolbar
+                app:title="Trang Chinh"
+                android:background="#ff00dfff"
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize" />
+
+            <!-- Thêm TextView -->
+            <TextView
+                android:id="@+id/tvInfo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Hello World"
+                android:textSize="18sp"
+                android:layout_marginTop="16dp" />
+
+            <!-- Thêm Button -->
+            <Button
+                android:id="@+id/btnClickMe"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Click Me"
+                android:layout_marginTop="16dp" />
+
+        </LinearLayout>
+    </androidx.drawerlayout.widget.DrawerLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

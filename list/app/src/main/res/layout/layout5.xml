@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:padding="16dp"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    tools:context=".layout5">
+    <TextView
+        android:id="@+id/tvLogin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Login Application"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        android:layout_marginBottom="20dp"/>
+    <TextView
+        android:id="@+id/tvUserName"
+        android:layout_below="@id/tvLogin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="User Name" />
+    <EditText
+        android:id="@+id/edtUserName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="14dp"
+        android:layout_marginTop="-35dp"
+        android:layout_below="@+id/tvUserName"
+        android:layout_toRightOf="@id/tvUserName" />
+    <TextView android:id="@+id/tvPass"
+        android:layout_below="@id/tvUserName"
+        android:layout_marginTop="30dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Password" />
+    <EditText
+        android:id="@+id/edtPass"
+        android:layout_width="295dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tvPass"
+        android:layout_toRightOf="@id/tvPass"
+        android:layout_marginLeft="23dp"
+        android:layout_marginTop="-34dp"
+        android:inputType="textPassword"/>
+    <CheckBox
+        android:id="@+id/chkRemember"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tvPass"
+        android:text="Remember me"
+        android:checked="true"
+        android:layout_marginTop="7dp" />
+    <Button
+        android:id="@+id/btnLogin"
+        android:layout_below="@id/chkRemember"
+        android:layout_centerInParent="true"
+        android:text="Login"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+</RelativeLayout>

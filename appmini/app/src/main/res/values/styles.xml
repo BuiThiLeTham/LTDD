@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="Theme.AppMini" parent="Theme.MaterialComponents.Light.NoActionBar">
+        <!-- Theme không có ActionBar -->
+    </style>
+</resources>
+
