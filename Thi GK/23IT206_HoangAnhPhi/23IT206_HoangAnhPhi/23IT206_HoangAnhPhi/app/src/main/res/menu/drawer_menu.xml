@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/primeNumberFragment"
+            android:icon="@android:drawable/ic_menu_edit"
+            android:title="Kiểm tra số nguyên tố" />
+        <item
+            android:id="@+id/historyFragment"
+            android:icon="@android:drawable/ic_menu_recent_history"
+            android:title="Lịch sử" />
+        <item
+            android:id="@+id/hocPhanFragment"
+            android:icon="@android:drawable/ic_menu_view"
+            android:title="Danh sách học phần" />
+        <item
+            android:id="@+id/quanLyHocPhanFragment"
+            android:icon="@android:drawable/ic_menu_manage"
+            android:title="Quản lý học phần" />
+        <item
+            android:id="@+id/tinhTongFragment"
+            android:icon="@android:drawable/ic_menu_add"
+            android:title="Tính tổng" />
+    </group>
+</menu>

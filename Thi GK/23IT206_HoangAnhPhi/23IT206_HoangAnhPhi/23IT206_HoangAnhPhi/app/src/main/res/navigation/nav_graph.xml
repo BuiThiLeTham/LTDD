@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/primeNumberFragment">
+
+    <fragment
+        android:id="@+id/primeNumberFragment"
+        android:name="com.example.a23it206_hoanganhphi.ui.PrimeNumberFragment"
+        android:label="Kiểm tra số nguyên tố"
+        tools:layout="@layout/fragment_prime_number" />
+
+    <fragment
+        android:id="@+id/historyFragment"
+        android:name="com.example.a23it206_hoanganhphi.ui.HistoryFragment"
+        android:label="Lịch sử"
+        tools:layout="@layout/fragment_history" />
+        
+    <fragment
+        android:id="@+id/hocPhanFragment"
+        android:name="com.example.a23it206_hoanganhphi.ui.HocPhanFragment"
+        android:label="Danh sách học phần"
+        tools:layout="@layout/fragment_hoc_phan" />
+        
+    <fragment
+        android:id="@+id/quanLyHocPhanFragment"
+        android:name="com.example.a23it206_hoanganhphi.ui.QuanLyHocPhanFragment"
+        android:label="Quản lý học phần"
+        tools:layout="@layout/fragment_quan_ly_hoc_phan" />
+        
+    <fragment
+        android:id="@+id/tinhTongFragment"
+        android:name="com.example.a23it206_hoanganhphi.ui.TinhTongFragment"
+        android:label="Tính tổng"
+        tools:layout="@layout/fragment_tinh_tong" />
+</navigation>
