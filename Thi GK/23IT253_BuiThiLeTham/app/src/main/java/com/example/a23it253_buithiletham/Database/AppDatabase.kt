@@ -4,7 +4,8 @@ import android.content.Context
 import androidx.room.Database
 import androidx.room.Room
 import androidx.room.RoomDatabase
-import com.example.a23it253_buithiletham.DAO.MayTinhDao
+import com.example.a23it235_buithiletham.DAO.MayTinhDao
+
 import com.example.a23it253_buithiletham.Entity.MayTinh
 
 @Database(entities = [MayTinh::class], version = 1, exportSchema = false)

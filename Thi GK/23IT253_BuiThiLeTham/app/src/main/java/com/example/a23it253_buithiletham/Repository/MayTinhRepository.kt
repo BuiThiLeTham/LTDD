@@ -1,7 +1,8 @@
 package com.example.a23it253_buithiletham.Repository
 
 import androidx.lifecycle.LiveData
-import com.example.a23it253_buithiletham.DAO.MayTinhDao
+import com.example.a23it235_buithiletham.DAO.MayTinhDao
+
 import com.example.a23it253_buithiletham.Entity.MayTinh
 
 class MayTinhRepository(private val mayTinhDao: MayTinhDao) {
